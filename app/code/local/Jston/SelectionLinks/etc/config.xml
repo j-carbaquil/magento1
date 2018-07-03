@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jston_SelectionLinks>
+            <version>1.0.0</version>
+        </Jston_SelectionLinks>
+    </modules>
+    <global>
+        <blocks>
+            <jston_selectionlinks>
+                <class>Jston_SelectionLinks_Block</class>
+            </jston_selectionlinks>
+        </blocks>
+        <helpers>
+            <jston_selectionlinks>
+                <class>Jston_SelectionLinks_Helper</class>
+            </jston_selectionlinks>
+        </helpers>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <jston_selectionlinks>
+                    <file>jston/selectionlinks.xml</file>
+                </jston_selectionlinks>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

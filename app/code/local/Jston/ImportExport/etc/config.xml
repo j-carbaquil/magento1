@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jston_ImportExport>
+            <version>0.0.1</version>
+        </Jston_ImportExport>
+    </modules>
+    <global>
+        <blocks>
+            <importexport>
+                <rewrite>
+                    <adminhtml_export_filter>Jston_ImportExport_Block_Adminhtml_Export_Filter</adminhtml_export_filter>
+                </rewrite>
+            </importexport>
+        </blocks>
+    </global>
+</config>
