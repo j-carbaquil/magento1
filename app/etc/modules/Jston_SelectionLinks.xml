@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jston_SelectionLinks>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Jston_SelectionLinks>
+    </modules>
+</config>

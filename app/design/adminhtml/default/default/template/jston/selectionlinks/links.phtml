@@ -1,0 +1,28 @@
+<div class="additional-links">
+    <a href="#" id="select-all">Select All</a>
+    <span class="separator">|</span>
+    <a href="#" id="unselect-all">Unselect All</a>
+</div>
+
+<script>
+    $('select-all').observe('click', checkAllByAttr);
+    $('unselect-all').observe('click', uncheckAllByAttr);
+
+    function checkAllByAttr() {
+        try {
+            var checkboxes = $$('[name^="<?php echo $this->getTargetColumn(); ?>"]');
+            checkboxes.each(function(s, index) { s.checked = true; });
+        } catch(e) {
+            alert(e.description);
+        }
+    }
+
+    function uncheckAllByAttr() {
+        try {
+            var checkboxes = $$('[name^="<?php echo $this->getTargetColumn(); ?>"]');
+            checkboxes.each(function(s, index) { s.checked = false; });
+        } catch(e) {
+            alert(e.description);
+        }
+    }
+</script>
